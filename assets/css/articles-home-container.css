@@ -1,0 +1,26 @@
+.list-group-item {
+    background: linear-gradient(135deg, #fff, #0f5dc4);
+    color: rgb(7, 4, 4);
+    border: none;
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+    animation: float 3s ease-in-out infinite;
+}
+.list-group-item:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #0f5dc4, #0f5dc4);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.list-group-item h5, .list-group-item p, .list-group-item small {
+    color: rgb(10, 5, 5);
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
