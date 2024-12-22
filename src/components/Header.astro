@@ -11,7 +11,7 @@ import Container from "@components/Container.astro"
     <div class="relative h-full w-full">
       <div class="absolute left-0 top-1/2 -translate-y-1/2 flex gap-1 font-semibold">
         <a href="/" class="flex gap-1 text-current hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">
-          <img src="../../public/1.png" alt="Logo" class="size-6 fill-current" />
+          <!-- <img src="../../public/" alt="Logo" class="size-6 fill-current" /> -->
           <div>
             {SITE.TITLE}
           </div>
@@ -37,7 +37,7 @@ import Container from "@components/Container.astro"
         </svg>
       </a>
 
-      <a href="/rss.xml" target="_blank" aria-label={`Rss feed for ${SITE.TITLE}`} class={cn("hidden md:flex", "size-9 rounded-full p-2 items-center justify-center", "bg-transparent hover:bg-black/5 dark:hover:bg-white/20", "stroke-current hover:stroke-black hover:dark:stroke-white", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out")}>
+      <a href="#" target="_blank" aria-label={`Rss feed for ${SITE.TITLE}`} class={cn("hidden md:flex", "size-9 rounded-full p-2 items-center justify-center", "bg-transparent hover:bg-black/5 dark:hover:bg-white/20", "stroke-current hover:stroke-black hover:dark:stroke-white", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out")}>
         <svg class="size-full">
           <use href="/ui.svg#rss"></use>
         </svg>
