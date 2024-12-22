@@ -7,5 +7,4 @@ import solidJs from "@astrojs/solid-js";
 export default defineConfig({
   site: "https://alcajorv2.github.io",
   integrations: [mdx(), sitemap(), solidJs(), tailwind({ applyBaseStyles: false })],
-  base: "/alcajorv2/", // Asegúrate de configurar la base correctamente
 });
