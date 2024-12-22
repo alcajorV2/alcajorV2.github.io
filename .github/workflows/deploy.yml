@@ -16,12 +16,30 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
-      - name: Install, build, and upload your site
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Verify dependencies
+        run: pnpm list
+
+      - name: Build site
+        run: pnpm run build
+
+      - name: Upload site
         uses: withastro/action@v3
         with:
-          path: . # La ubicación raíz de tu proyecto Astro dentro del repositorio
-          node-version: 20 # La versión específica de Node que se debe usar para construir tu sitio
-          package-manager: npm@latest # El gestor de paquetes que se debe usar para instalar dependencias y construir tu sitio
+          path: .
+          node-version: 20
+          package-manager: pnpm@latest
 
   deploy:
     needs: build
