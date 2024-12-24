@@ -16,16 +16,16 @@ const work = await Promise.all(
   })
 )
 
-function formatWorkDate(input: Date | string | undefined) {
-  if (!input) return "Presente" // Maneja el caso de undefined
-  if (typeof input === "string") return input
+function formatWorkDate(input: Date | string | null | undefined) {
+  if (!input || input === null) return "Presente"; // Maneja null y undefined
+  if (typeof input === "string") return input;
 
   const month = input.toLocaleDateString("en-US", {
     month: "short",
-  })
+  });
 
-  const year = new Date(input).getFullYear()
-  return `${month} ${year}`
+  const year = new Date(input).getFullYear();
+  return `${month} ${year}`;
 }
 ---
 
