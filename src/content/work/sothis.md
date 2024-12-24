@@ -1,6 +1,6 @@
 ---
 company: "Sothis"
-role: "SOAREngeener"
+role: "SOAR Engeener"
 dateStart: "2024-06-25"
 dateEnd: null
 ---

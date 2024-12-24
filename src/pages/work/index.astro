@@ -16,7 +16,8 @@ const work = await Promise.all(
   })
 )
 
-function formatWorkDate(input: Date | string) {
+function formatWorkDate(input: Date | string | undefined) {
+  if (!input) return "Presente" // Maneja el caso de undefined
   if (typeof input === "string") return input
 
   const month = input.toLocaleDateString("en-US", {
