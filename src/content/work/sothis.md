@@ -1,8 +1,8 @@
 ---
 company: "Sothis"
 role: "SOAREngeener"
-dateStart: "25/06/2024"
-dateEnd: "25/08/2026"
+dateStart: "2024-06-25"
+dateEnd: null
 ---
 
 On this job I work as a SOAR (Security Orchestration, Automation and Response) engeener on a SOC. This is my really fisrt job

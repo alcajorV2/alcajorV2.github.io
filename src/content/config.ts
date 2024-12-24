@@ -6,9 +6,10 @@ const work = defineCollection({
     company: z.string(),
     role: z.string(),
     dateStart: z.coerce.date(),
-    dateEnd: z.union([z.coerce.date(), z.string()]),
+    dateEnd: z.union([z.coerce.date(), z.string()]).optional(),
+    today: z.preprocess(() => new Date(), z.date()), // Calcula la fecha actual
   }),
-})
+});
 
 const blog = defineCollection({
   type: "content",
