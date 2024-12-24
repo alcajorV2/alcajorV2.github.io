@@ -1,16 +1,30 @@
 ---
-title: "Project One"
-summary: "Lorem ipsum dolor sit amet"
-date: "Mar 18 2022"
+title: "IA testing script"
+summary: "This is a script that  can be used to test if the logic of a code has changed with respect to its update. This can be very useful for developers to make sure that they have not made any mistakes in optimizing the code with respect to the original."
+date: "Mar 23 2023"
 draft: false
 tags:
-- Astro
 - Javascript
-- Typescript
-- Tailwind
-- SolidJs
+- Python
+- Html
 demoUrl: https://>empty>
-repoUrl: https://github.com/<empty>
+repoUrl: https://github.com/alcajorV2/IA_Tester_Proyect
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+# IA_Tester_Proyect
+
+This code can be used to test if the logic of a code has changed with respect to its update. This can be very useful for developers to make sure that they have not made any mistakes in optimizing the code with respect to the original.
+
+![Image representative, IA and Python.](../../../../public/1.jpeg)
+
+## ¿How it works?
+- This script generate multiple random json inputs adjusted to the input of both codes that we are going to compare.
+- Then for each input generated (1000 more or less, is adjustable), the script execute with each input both codes and compare de output, trying to find some variations on the output.
+- If the script find's some variation it will stop and explain witch is the variation.   
+
+## ¿Purpose?
+The purpose of this script is to find if an upgrade of *only* optimisation have different logic than the original version.
+
+## ¿How to use it?
+1. The first thing is that this code will not be usefull for all of us, because the input json that is generated with random values, are adjusted for de input data of both codes that I'm testing. You must adjust to out requirements.
+2. The second thing is that you must change both codes on folder test (logic), with your own codes to be tested.
