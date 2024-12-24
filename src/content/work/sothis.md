@@ -2,7 +2,6 @@
 company: "Sothis"
 role: "SOAR engeener"
 dateStart: "26/05/2024"
-dateEnd: "today"
 ---
 
 On this job I work as a SOAR (Security Orchestration, Automation and Response) engeener on a SOC. This is my really fisrt job
