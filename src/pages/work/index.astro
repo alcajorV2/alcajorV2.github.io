@@ -16,23 +16,15 @@ const work = await Promise.all(
   })
 )
 
-function formatWorkDate(input: Date | string | null | undefined) {
-  // Si input es nulo o indefinido, devuelve "Presente"
-  if (!input) return "Presente";
+function formatWorkDate(input: Date | string) {
+  if (typeof input === "string") return input
 
-  // Si input es una cadena, devolverla tal cual
-  if (typeof input === "string") return input;
-
-  // Si input es un objeto Date, asegúrate de que sea una fecha válida
-  const date = new Date(input);
-  if (isNaN(date.getTime())) return "Presente"; // Si no es una fecha válida, devolver "Presente"
-
-  const month = date.toLocaleDateString("en-US", {
+  const month = input.toLocaleDateString("en-US", {
     month: "short",
-  });
+  })
 
-  const year = date.getFullYear();
-  return `${month} ${year}`;
+  const year = new Date(input).getFullYear()
+  return `${month} ${year}`
 }
 ---
 
