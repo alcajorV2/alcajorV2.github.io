@@ -1,7 +1,7 @@
 ---
 company: "Sothis"
 role: "SOAR Engeener"
-dateStart: "2024-06-25"
+dateStart: "06/25/2024"
 dateEnd: "Now"
 ---
 
