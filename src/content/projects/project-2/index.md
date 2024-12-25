@@ -9,6 +9,8 @@ tags:
 - Docker
 - Pytorch
 - Json
+demoUrl: https://>empty>
+repoUrl: https://github.com/alcajorV2/IA_MRI_Brain_Cancer_Detection
 ---
 
 This is a proyect that I realize in the process of training for my TFG, and I think it may be useful for someone. However, is so
