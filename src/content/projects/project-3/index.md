@@ -18,7 +18,7 @@ In addition, this was my first Machine Learning proyect, in which I learned the 
 
 So let's start explaining the structure of the repo and how the program works.
 
-![Brain Tumor representation](./static/6.jpg)
+![Brain Tumor representation](./static/10.png)
 
 ## ¿Questions?
 
